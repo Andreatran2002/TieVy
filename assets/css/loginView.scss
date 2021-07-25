@@ -83,6 +83,7 @@
         linear-gradient( 45deg, #9B3D95,#B7356B,#EF2E36,#FC8B4B ) border-box;
         border: 1px solid transparent;
         border-radius: 10px;
+        // animation: warning-on 2s linear forwards;
       }
       &>button {
         margin-top: 13px;
@@ -300,4 +301,17 @@ body:after {
   100% {
     opacity: 0;
   }
+}
+@keyframes warning-on {
+  0% {border: 1px solid transparent;}
+  33% {border: 1px solid red;}
+  66%{border: 1px solid transparent;}
+  100% {border: 1px solid red;}
+}
+@keyframes warning-off {
+  0% {}
+  25% {border: 1px solid rgb(0, 255, 0);}
+  50% {border: 1px solid transparent;}
+  75%{border: 1px solid rgb(0, 255, 0);}
+  100% {border: 1px solid transparent;}
 }

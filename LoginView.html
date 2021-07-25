@@ -31,7 +31,9 @@
         <div class="header__option">
           <a href="#" class="header__option-item"></a>
         </div>
-        <button  onclick="signupOn()" class="header__signup button">Sign up</button>
+        <button onclick="signupOn()" class="header__signup button">
+          Sign up
+        </button>
       </div>
       <div class="body">
         <div class="body__tittle">
@@ -100,7 +102,7 @@
             <div class="login__left-item">
               <input
                 type="password"
-                class="login-password"
+                class="login-password confirm-password"
                 placeholder="Password"
               />
               <ion-icon
@@ -111,8 +113,9 @@
             </div>
             <div class="login__left-item">
               <input
+                onblur="confirm()"
                 type="password"
-                class="login-password"
+                class="login-password confirm-password"
                 placeholder="Confirm your password"
               />
               <ion-icon
@@ -120,6 +123,19 @@
                 onclick="hidePw(2)"
                 name="eye"
               ></ion-icon>
+              <p
+                id="warning-password"
+                style="
+                  font-size: 12px;
+                  font-weight: 500;
+                  position: absolute;
+                  botton: 0px;
+                  left: 15px;
+                  transform: translate(0, -50%);
+                  transition: all 0.2s ease;
+                  opacity: 0;
+                "
+              >Check your password</p>
             </div>
             <div class="login__left-item">
               <button class="button">Create</button>
@@ -130,9 +146,7 @@
             </div>
           </div>
           <div class="line"></div>
-          <div class="signup__body-right">
-
-          </div>
+          <div class="signup__body-right"></div>
           <ion-icon
             style="
               position: absolute;
@@ -194,8 +208,40 @@
           filter.style = "";
         }, 1000);
       }
+      let confirmPassword = document.getElementsByClassName("confirm-password");
+      console.log(confirmPassword[1]);
+      function confirm() {
+        let a = confirmPassword[0].value;
+        let b = confirmPassword[1].value;
+        let passwordCheck = a == b ? true : false;
+        console.log(passwordCheck);
+        if (passwordCheck === false) {
+          confirmPassword[0].style.animation = "warning-on 1s linear forwards";
+          confirmPassword[1].style.animation = "warning-on 1s linear forwards";
+          document.getElementById("warning-password").style.animation = "open-signup 1s linear forwards";
+        }
+        if (passwordCheck === true) {
+          confirmPassword[0].style.animation =
+          "warning-off 1.5s linear forwards";
+          confirmPassword[1].style.animation =
+          "warning-off 1.5s linear forwards";
+          let c = document.getElementById("warning-password").style.animation;
+          console.log(c);
+          if(c == "1s linear 0s 1 normal forwards running open-signup") {
+            document.getElementById("warning-password").style.animation = "close-signup 0.6s linear forwards";
+          }
+        }
+      }
+      // getId('color-1').addEventListener("keyup",function(event) {
+      //       event.preventDefault();
+      //       if(event.keyCode === 13) {
+      //           arrColor[0] = getId('color-1').value;
+      //           console.log(arrColor);
+      //           preview.style.background = commitCl();
+      //           output.innerHTML = `background-image: linear-gradient( ${x}deg, ${arrColor.join(',')} );`;
+      //       }
+      //   });
       // game
     </script>
-    
   </body>
 </html>

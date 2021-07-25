@@ -299,5 +299,33 @@ body:after {
     opacity: 0;
   }
 }
+@keyframes warning-on {
+  0% {
+    border: 1px solid transparent;
+  }
+  33% {
+    border: 1px solid red;
+  }
+  66% {
+    border: 1px solid transparent;
+  }
+  100% {
+    border: 1px solid red;
+  }
+}
+@keyframes warning-off {
+  25% {
+    border: 1px solid lime;
+  }
+  50% {
+    border: 1px solid transparent;
+  }
+  75% {
+    border: 1px solid lime;
+  }
+  100% {
+    border: 1px solid transparent;
+  }
+}
 
 /*# sourceMappingURL=loginView.css.map */
