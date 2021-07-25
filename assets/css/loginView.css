@@ -4,24 +4,6 @@
   height: 100vh;
 }
 
-.button {
-  background-image: linear-gradient(62deg, #9A3C95, #C13467, #E53046, #EB8455);
-  color: rgba(255, 255, 255, 0.7);
-  cursor: pointer;
-  border-radius: 10px;
-  font-weight: 400;
-  transition: all 0.1s ease;
-  padding: 15px 30px 15px 25px;
-}
-.button:hover {
-  font-weight: 400;
-  color: #fff;
-  transform: scale(1.01);
-}
-.button:active {
-  transform: scale(0.9);
-}
-
 .header {
   display: flex;
   height: 15vh;
@@ -88,10 +70,6 @@
   right: 0;
   transform: translate(-150%, -50%);
 }
-.login__left-item > a {
-  margin-top: 13px;
-  margin-left: 10px;
-}
 .login__left-item > input {
   font-size: 14px;
   font-weight: 400;
@@ -103,7 +81,9 @@
   border: 1px solid transparent;
   border-radius: 10px;
 }
-.login__left-item > a {
+.login__left-item > button {
+  margin-top: 13px;
+  margin-left: 10px;
   padding: 15px 30px 16px 25px;
   width: 300px;
   display: block;
@@ -267,6 +247,24 @@ body:after {
 .close-signup:hover {
   color: #fff;
   transform: translate(-50%, -50%) scale(2.1) rotate(180deg) !important;
+}
+
+.button {
+  background-image: linear-gradient(62deg, #9A3C95, #C13467, #E53046, #EB8455);
+  color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+  border-radius: 10px;
+  font-weight: 400;
+  transition: all 0.1s ease;
+  padding: 15px 30px 15px 25px;
+}
+.button:hover {
+  font-weight: 400;
+  color: #fff;
+  transform: scale(1.01);
+}
+.button:active {
+  transform: scale(0.9);
 }
 
 @keyframes open-signup {
