@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/menu-left.css" />
+    <link rel="stylesheet" href="./assets/css/chatView.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>TiVy</title>
+  </head>
+  <body>
+    <!-- menu-left -->
+    <ul id="nagication-bar" class="menu menu-small">
+      <div class="top">
+        <li class="menu-header">
+          <ion-icon
+            onclick="grow()"
+            id="icon-hint"
+            name="arrow-back-outline"
+          ></ion-icon>
+        </li>
+        <li class="menu-search" onclick="growSearch()">
+          <ion-icon class="menu-search-icon" name="search-outline"></ion-icon>
+          <input id="search-input" type="text" placeholder="" />
+        </li>
+        <li>
+          <a href="#" class="menu-item">
+            <ion-icon name="home-outline"></ion-icon>
+            <span class="menu-item-text text-hide">Home</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="menu-item">
+            <ion-icon name="log-in-outline"></ion-icon>
+            <span class="menu-item-text text-hide">Login</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="menu-item">
+            <ion-icon name="log-out-outline"></ion-icon>
+            <span class="menu-item-text text-hide">Logout</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="menu-item">
+            <ion-icon name="person-add-outline"></ion-icon>
+            <span class="menu-item-text text-hide">Friends</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="menu-item">
+            <ion-icon name="notifications-outline"></ion-icon>
+            <span class="menu-item-text text-hide">Notifications</span>
+          </a>
+        </li>
+      </div>
+      <div class="bottom">
+        <li>
+          <a href="#" class="menu-item">
+            <ion-icon name="cube-outline"></ion-icon>
+            <span class="menu-item-text text-hide">Help</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="menu-item">
+            <ion-icon name="person-circle-outline"></ion-icon>
+            <span class="menu-item-text text-hide">Account</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="menu-item">
+            <ion-icon name="settings-outline"></ion-icon>
+            <span class="menu-item-text text-hide">Settings</span>
+          </a>
+        </li>
+      </div>
+    </ul>
+    <!-- menu-left -->
+    <!-- main-page -->
+    <div class="page-main">
+      <div class="header">
+        <a href="#" class="header__tittle">MESSENGER</a>
+      </div>
+      <div class="body">
+        <div class="body__left">
+          <div class="body__left-item">
+            <img
+              src="https://i.pinimg.com/236x/c7/ce/fd/c7cefd491aecb8f93c5e0588337ec876.jpg"
+              alt=""
+              class="body__left-item-image"
+            />
+            <a
+              href="https://www.facebook.com/sherman.pham.75?__tn__=-UC*F"
+              class="body__left-item-name"
+              >LOKI</a
+            >
+          </div>
+          <div class="body__left-item">
+            <img
+              src="https://i.pinimg.com/236x/85/af/3d/85af3d1aedca688912b2fdfd1cf47dba.jpg"
+              alt=""
+              class="body__left-item-image"
+            />
+            <a href="#" class="body__left-item-name">Sylvie</a>
+          </div>
+          <div class="body__left-item">
+            <img
+              src="https://i.pinimg.com/236x/98/52/1d/98521d83b7278417fb15bbdcd7cd1986.jpg"
+              alt=""
+              class="body__left-item-image"
+            />
+            <a href="#" class="body__left-item-name">Mobius</a>
+          </div>
+          <div class="body__left-item">
+            <img
+              src="https://i.pinimg.com/236x/79/44/d4/7944d4277a8ac33347a517080233cb2d.jpg"
+              alt=""
+              class="body__left-item-image"
+            />
+            <a href="#" class="body__left-item-name">B-15</a>
+          </div>
+        </div>
+        <div class="body__chatBox">
+          <div class="body__chatBox-header"></div>
+          <div class="body__chatBox-msgArea">
+            <div class="body__chatBox-msgArea-item receive">Lorem, ipsum.</div>
+            <div class="body__chatBox-msgArea-item receive">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem,
+              itaque?
+            </div>
+            <div class="body__chatBox-msgArea-item sent">Lorem.</div>
+            <div class="body__chatBox-msgArea-item sent">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Voluptatibus at dolor ab!
+            </div>
+            <div class="body__chatBox-msgArea-item sent">
+              Lorem, ipsum dolor.
+            </div>
+            <div class="body__chatBox-msgArea-item sent">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatum unde dicta veniam?
+            </div>
+            <div class="body__chatBox-msgArea-item sent">
+              Lorem, ipsum dolor.
+            </div>
+            <div class="body__chatBox-msgArea-item sent">
+              Lorem ipsum dolor sit amet consectetur adipisicing.
+            </div>
+            <div class="body__chatBox-msgArea-item receive">Lorem.</div>
+            <div class="body__chatBox-msgArea-item receive">
+              Lorem ipsum dolor sit.
+            </div>
+            <div class="body__chatBox-msgArea-item receive">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque
+              commodi atque alias. Ipsam alias, dolor adipisci autem beatae
+              nulla!
+            </div>
+            <div class="body__chatBox-msgArea-item receive">
+              Lorem, ipsum dolor.
+            </div>
+            <div class="body__chatBox-msgArea-item sent">
+              Lorem, ipsum dolor.
+            </div>
+            <div class="body__chatBox-msgArea-item sent">lorem</div>
+          </div>
+          <div class="body__chatBox-input"></div>
+        </div>
+      </div>
+    </div>
+    <!-- main-page -->
+    <script>
+      let searchInput = document.getElementById("search-input");
+      let textArray = document.getElementsByClassName("menu-item-text");
+      let iconhide = document.getElementsByClassName("menu-header");
+      console.log(iconhide);
+      let barHint = true;
+      function grow() {
+        if (barHint == false) {
+          document.getElementById("nagication-bar").classList.add("menu-small");
+          document.getElementById("icon-hint").style.transform =
+            "rotate(180deg)";
+          document.getElementsByClassName("menu-item-text");
+          barHint = true;
+          searchInput.style.padding = "0 0 0 0";
+          for (let i = 0; i < textArray.length; i++) {
+            textArray[i].classList.add("text-hide");
+          }
+        } else {
+          document
+            .getElementById("nagication-bar")
+            .classList.remove("menu-small");
+          document.getElementById("icon-hint").style.transform = "rotate(0deg)";
+          iconhide[0].classList.add("icon-hide_2");
+          searchInput.style.padding = "0 10px 0 45px";
+          for (let i = 0; i < textArray.length; i++) {
+            setTimeout(() => {
+              textArray[i].classList.remove("text-hide");
+            }, 250);
+          }
+          barHint = false;
+        }
+      }
+      // [0].style.display = "none";
+      function growSearch() {
+        if (barHint == true) {
+          grow();
+        }
+      }
+    </script>
+  </body>
+</html>

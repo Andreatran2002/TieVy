@@ -1,0 +1,110 @@
+.page-main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #161616;
+}
+
+.header {
+  height: 8%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 10px 0 10px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3), -2px -2px 5px #414e622a;
+}
+.header > a {
+  transform: scale(2);
+}
+
+.body {
+  font-weight: 300;
+  height: 92%;
+  display: flex;
+  border-radius: 20px;
+  color: rgba(255, 255, 255, 0.705);
+}
+.body__left {
+  margin: 10px;
+  border-radius: inherit;
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.3), inset -2px -2px 5px #414e623a;
+  width: 400px;
+  color: inherit;
+}
+.body__left-item {
+  color: inherit;
+  font-weight: 400;
+  margin: 20px 10px 20px 10px;
+  border-radius: inherit;
+  height: 80px;
+  display: flex;
+  padding: 20px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2), -2px -2px 5px #414e623a;
+}
+.body__left-item:first-child {
+  margin-top: 10px;
+}
+.body__left-item-image {
+  border-radius: 100px;
+  width: 60px;
+  height: 60px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1), -2px -2px 5px #414e623a;
+  border: 2px solid rgba(61, 37, 37, 0.05);
+  margin-right: 10px;
+}
+.body__chatBox {
+  border-radius: inherit;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  color: inherit;
+}
+.body__chatBox-header {
+  margin: 10px;
+  border-radius: inherit;
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.3), inset -2px -2px 5px #414e623a;
+  height: 60px;
+}
+.body__chatBox-msgArea {
+  padding: 10px 10px 0 10px;
+  margin: 10px;
+  border-radius: inherit;
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.3), inset -2px -2px 5px #414e623a;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  overflow-y: scroll;
+  height: 100%;
+  color: inherit;
+}
+.body__chatBox-msgArea::-webkit-scrollbar {
+  background-color: transparent;
+  width: 0px;
+}
+.body__chatBox-msgArea-item {
+  padding: 10px 15px;
+  max-width: 300px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2), -2px -2px 5px #414e623a;
+  border-radius: inherit;
+  margin-bottom: 10px;
+  color: inherit;
+  font-weight: 400;
+}
+.body__chatBox-input {
+  margin: 10px;
+  border-radius: inherit;
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.3), inset -2px -2px 5px #414e623a;
+  height: 60px;
+}
+
+.sent {
+  align-self: flex-end;
+}
+
+/*# sourceMappingURL=chatView.css.map */
