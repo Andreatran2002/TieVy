@@ -247,7 +247,7 @@
               name="message__input"
               class="message__input"
               id="message__input"
-              onkeydown="if (event.keyCode == 13) {sendMsg()}"
+              onkeydown="if (event.keyCode == 13) {sendMsg();sendmsg();}"
               value=""
               placeholder="Enter your message here ... (Press enter to send message)"
             />
@@ -266,7 +266,6 @@
           setTimeout(() => {
             rocket[0].classList.remove("rocket-fly")
           },250)
-          sendmsg();
         }
       }
       function sendmsg() {
